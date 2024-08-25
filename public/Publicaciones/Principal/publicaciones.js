@@ -2,14 +2,15 @@
 let publicaciones = [];
 
 
-function crearPublicación() {
+function crearPublicacion() {
 
     // Valores inputs
-    const nombre = document.getElementById('nombreUsuario').value;
+   // const nombre = document.getElementById('nombreUsuario').value;
+    const nombre = "Dam";
     const contenido = document.getElementById('contenidoPublicacion').value;
     const imgUrl = document.getElementById('imgUrl').value;
-    const audioUrl = document.getElementById('audioUrl').value;
-    const videoUrl = document.getElementById('videoUrl').value;
+    // const audioUrl = document.getElementById('audioUrl').value;
+    // const videoUrl = document.getElementById('videoUrl').value;
     const fechaCreacion = new Date();
 
     // Validación
@@ -23,8 +24,8 @@ function crearPublicación() {
         nombre: nombre,
         contenido: contenido,
         imgUrl: imgUrl,
-        audioUrl: audioUrl,
-        videoUrl: videoUrl,
+        // audioUrl: audioUrl,
+        // videoUrl: videoUrl,
         fechaCreacion: fechaCreacion
     };
 
@@ -36,11 +37,11 @@ function crearPublicación() {
     renderPublicacion();
 
     // Limpia inputs  // Borra lo que estaba en los inputs al crear la publicación.
-    document.getElementById('nombreUsuario').value = '';
+    // document.getElementById('nombreUsuario').value = '';
     document.getElementById('contenidoPublicacion').value = '';
     document.getElementById('imgUrl').value = '';
-    document.getElementById('audioUrl').value = '';
-    document.getElementById('videoUrl').value = '';  
+    // document.getElementById('audioUrl').value = '';
+    // document.getElementById('videoUrl').value = '';  
 
 }
 
@@ -48,7 +49,7 @@ function crearPublicación() {
 function renderPublicacion() {
 
     // Limpia contenido anterior antes de renderización
-    const publicacionesContainer = document.getElementById('publicaciones');
+    const publicacionesContainer = document.getElementById('contenedor-publicaciones');
     publicacionesContainer.innerHTML = ''; 
 
 
